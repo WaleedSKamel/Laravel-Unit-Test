@@ -22,7 +22,8 @@ class AuthorFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->name,
+            'dob' => now()->subYears(10)
         ];
     }
 }
